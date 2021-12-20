@@ -1,0 +1,37 @@
+# at least one class BG
+#collapse : ['BG', "collapse", 'green', "sky", 'slope']
+#bank : ["bank", "green", "water", "sky", "collapse", "slope"]
+#origin : ["BG", "water", "green", "embankment", "collapse", "sky"]
+class_names: ['BG', "collapse", 'green', "sky", 'slope']
+
+colors: [[1,1,0], [0,1,0], [0,0,1], [1,0,0]]
+
+#Root path
+dir_path: "D:\\coding\\remote_weights\\collapse"
+
+
+#saving image(weights) directiry
+save_path: "./"
+
+
+#logs relative path
+# "logs"
+logs_path: "logs_test"
+
+
+#Which mode to start with? (last, coco, random_init, sampling_init, resume)
+init_with: "last"
+
+
+#train partition_ratio [train, val, test]
+ratio: [8,1,1]
+
+
+#cross validation mode ("kfold", "monte_carlo")
+sampling_mode: "kfold"
+#which times to run monte_carlo
+sampling_times: 10
+
+epochs_per_sampling: 10
+##sample_name(identical with sheet_name)->mode: Resume 
+special_sample_list: []

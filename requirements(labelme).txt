@@ -1,0 +1,3 @@
+labelme==3.3.0
+pyqt
+pillow
