@@ -2183,9 +2183,7 @@ class MaskRCNN(object):
         # optimizer = keras.optimizers.SGD(
         #     learning_rate=learning_rate, momentum=momentum,
         #     clipnorm=self.config.GRADIENT_CLIP_NORM)
-	optimizer = tf.keras.optimizers.legacy.SGD(
-	    learning_rate=learning_rate, momentum=momentum,
-            clipnorm=self.config.GRADIENT_CLIP_NORM)
+        optimizer = tf.keras.optimizers.legacy.SGD(learning_rate=learning_rate, momentum=momentum, clipnorm=self.config.GRADIENT_CLIP_NORM)
         # Add Losses
         loss_names = [
             "rpn_class_loss",  "rpn_bbox_loss",
